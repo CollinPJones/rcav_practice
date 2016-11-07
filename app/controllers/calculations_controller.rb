@@ -10,6 +10,6 @@ class CalculationsController < ApplicationController
 
   def square
     @number = params[:number].to_f
-    @square = @number ** 2
+    @square = (@number ** 2).round(2)
   end
 end
